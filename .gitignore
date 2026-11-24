@@ -5,3 +5,4 @@ remotion-tmp/
 *.wav
 *.mp4
 .env
+__pycache__/
