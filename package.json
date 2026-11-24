@@ -1,0 +1,42 @@
+{
+  "name": "animated-shorts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render src/index.ts BridgeShort out/bridge/video.mp4 --codec h264 --crf 16",
+    "render:2k": "remotion render src/index.ts BridgeShort out/bridge/video_2k.mp4 --codec h264 --crf 16 --scale 1.3333",
+    "stills": "node scripts/bridge-stills.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibhuti-parida/animated-shorts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibhuti-parida/animated-shorts/issues"
+  },
+  "homepage": "https://github.com/bibhuti-parida/animated-shorts#readme",
+  "dependencies": {
+    "@react-three/fiber": "9.1.2",
+    "@react-three/postprocessing": "3.0.4",
+    "@remotion/bundler": "4.0.290",
+    "@remotion/cli": "4.0.290",
+    "@remotion/renderer": "4.0.290",
+    "@remotion/three": "4.0.290",
+    "postprocessing": "6.37.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.290",
+    "three": "0.175.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.2",
+    "@types/three": "0.175.0",
+    "typescript": "5.8.3"
+  },
+  "private": true
+}
